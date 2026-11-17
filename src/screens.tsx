@@ -1665,9 +1665,16 @@ export function SettingsScreen(controls: MobileControls) {
         />
         <SettingsRow
           icon={<ExternalLink className="size-4" />}
-          title="GitHub 仓库"
+          title="上游GitHub 仓库"
           description="github.com/YRRLYB/Aria-Mobile"
           onClick={() => void openExternal("https://github.com/YRRLYB/Aria-Mobile")}
+          right={<ChevronRight className="size-4 text-neutral-400" />}
+        />
+        <SettingsRow
+          icon={<ExternalLink className="size-4" />}
+          title="GitHub 仓库"
+          description="github.com/miaoxiaoxian/Aria-Mobile"
+          onClick={() => void openExternal("https://github.com/miaoxiaoxian/Aria-Mobile")}
           right={<ChevronRight className="size-4 text-neutral-400" />}
         />
       </SettingsGroup>
